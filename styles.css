@@ -1,0 +1,76 @@
+body
+{
+  background-color: gray ;
+}
+.calculator 
+{ 
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15), 0px 4px 6px 0px rgba(0, 0, 0, 0.12);
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    margin-block-start: 4em;
+    max-inline-size: 22rem;
+    overflow: hidden;
+    color: hsl(202, 11%, 29%);
+ 
+}
+input[type="text"]
+{
+  justify-content:right;
+  width: 650px;
+  height: 50px;
+  border: 2px solid white;
+  padding: 5px;
+  background-color: white;
+  font-size: 2em;
+  
+  /*position: absolute;
+  top:5%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+}
+
+.cal_keys 
+{
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-gap: 1px;
+  background: hsl(0, 0%, 0%);
+  padding: 0.5rem;
+}
+.cal_key 
+{
+  background: hsl(210, 25%, 95%);
+  border: none;
+  padding-block-start: 1rem;
+  padding-block-end: 1rem;
+  padding-inline-end: 1.25rem;
+  padding-inline-start: 1.25rem;
+  font-size: 1.5rem;
+  /* Playful Styles */
+  inline-size: 70px;
+  block-size: 70px;
+  margin: 0.25rem;
+  border-radius: 40px;
+}
+.cal_key:active,
+.cal_key:focus 
+{
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3) inset;
+  outline: none;
+}
+.calkey-opr 
+{
+  background: hsl(89, 92%, 58%);
+}
+.calkey-opr:active 
+{
+  background: hsl(208, 24%, 80%);
+}
+.cal-enter
+ {
+  grid-column: 4 / 5;
+  grid-row: 2 / span 4;
+  background: hsl(357, 100%, 67%);
+  height: auto;
+}
